@@ -17,4 +17,9 @@ public:
     stack(){
         top = NULL;
     }
+
+    bool isEmpty()
+    {
+        return top == NULL;
+    }
 };
