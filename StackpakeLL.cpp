@@ -32,4 +32,10 @@ public:
     {
         return top == NULL;
     }
+
+    void pop() {
+       Node *temp = top;
+       top = top->next;
+       delete temp;
+   }
 };
