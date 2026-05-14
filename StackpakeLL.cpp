@@ -34,8 +34,13 @@ public:
     }
 
     void pop() {
-       Node *temp = top;
-       top = top->next;
-       delete temp;
+        if (isEmpty())
+        {
+            cout << "Stack is empty." << endl;
+        }
+    
+        Node *temp = top;
+        top = top->next;
+        delete temp;
    }
 };
